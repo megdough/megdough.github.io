@@ -1,0 +1,212 @@
+body {
+	background-image: url("background.jpg");
+	background-color: #ffffff;
+	color: #A9A9A9;
+	font-family: Arial, Helvetica, sans-serif;
+	color: darkgrey;
+	min-width: 960px;
+}
+
+.wrapper {
+	position: absolute;
+	display: grid;
+	width: 80%;
+	background-color: #90C7E3;
+	min-width: 960px;
+	top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 80%;
+	grid-template-columns: 200px 330px 1fr;
+	box-shadow: 5px 10px gray;
+	grid-template-areas:"header header header""nav head head""nav img content""nav form form""nav contact contact""animation animation animation"". footer footer";
+	
+}
+
+h1 {
+	background-color: #000033;
+	color: white;
+	font-family: Georgia, "Times New Roman", serif;
+	margin: 0;
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	margin-bottom:0;
+}
+
+h2 {
+    color: #3399CC;
+    font-family: Georgia, Times New Roman, serif;
+    text-shadow: 2px 2px 2px gray;
+    padding-left: 5px;
+   }
+
+h3 {
+	color: #000033;
+    font-family: Georgia, Times New Roman, serif;
+    padding-left: 10px;
+}
+
+/* NAV */
+
+nav {
+ 	grid-area: nav;
+ 	margin: 0;
+ 	padding-left: 0;
+	background-color: skyblue;
+	font-weight: 700;
+	height: 100%;
+	font-size: 1.2em;
+
+}
+nav ul {
+	list-style-type: none;
+	font-size: 1.2em;
+	margin: 0;
+	padding-left: 5px;
+	padding-top: 3px;
+	list-style-position: inside;
+}
+li {
+	padding: 1px;
+}
+nav ul a {
+	color:  #000033;
+	text-decoration: none;
+}
+
+nav ul a:visited {
+	color: #344873;
+}
+
+nav ul a:hover {
+	color: white;
+}
+
+
+
+#head {
+	grid-area: head;
+	color: #3399CC;
+	text-shadow: 2px 2px gray;
+	font-family: Georgia, "Times New Roman", serif
+}
+
+header {
+    grid-area: header;
+}
+
+
+
+img {
+	margin: 0;
+	padding-left: 5px;
+	grid-area: img;
+
+}
+
+p {
+	padding-left: 15px;
+}
+
+span.resort {
+	color: #000033;
+	font-weight: 700;
+}
+
+/* FORM */
+
+form {
+	grid-area: form;
+	width: 50%;
+	margin: 0 auto;
+}
+
+legend {
+	color: #444547;
+}
+
+fieldset {
+	text-align: center;
+
+}
+
+label {
+	color: #444547;
+	margin: 10px;
+	padding-top: 10px;
+}
+
+input {
+	border-radius: 3px;
+	margin-top: 5px;
+}
+
+textarea {
+	margin-top: 5px;
+	border-radius: 3px;
+}
+
+.button {
+	margin-top: 15px;
+	padding: 5px;
+	border: 1px solid #444547;
+	border-radius: 3px;
+}
+
+
+#content {
+	grid-area: content;
+}
+
+#contact {
+	grid-area: contact;
+	font-size: 90%; 
+}
+
+footer {
+	grid-area: footer;
+	font-size: 75%;
+
+	font-family: Georgia, Times New Roman, Serif;
+	font-style: italic;
+
+}
+
+div.animation {
+	position: relative;
+    grid-area: animation;
+    animation-name: bird-animation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes bird-animation {
+	 0% {
+        left: 0;
+        top: 0;
+    }
+
+    100% {
+        left: calc(100% - 50px);
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

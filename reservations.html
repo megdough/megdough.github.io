@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CNIT-132 - Homework Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="pacific.css">	
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body> 
+	<div class="wrapper">
+		<header>
+			<h1>Pacific Trails Resort</h1>
+		</header>
+	<nav>
+	<ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yurts.html">Yurts</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+    </ul>
+	</nav>
+
+	<h2 id="head">Reservations</h2>
+	<!--<main id="content">-->
+	<form name="customerinfo" action="contact.php" method="POST">
+		<fieldset>
+			<legend>Please enter your information
+		</legend>
+		<label for="firstName" >First Name: </label>
+			<input type="text" name="firstName" id="firstName">
+		<br>
+		<label for="lastName">Last Name: </label>
+			<input type="text" name="lastName" id="lastName">
+		<br>
+		<label for="phoneNumber">Telephone Number: </label>
+			<input type="tel"
+			name="phoneNumber" id="phoneNumber"> 
+		<br>
+		<label for="guests">Number of guests:</label>
+			<input type="Number" name="totalGuests" id="guests">
+		<br>
+		<label for="message">Message: </label>
+			<textarea id="message" name="message" rows="3" cols="30"></textarea>
+		<br>
+		<input class="button" type="submit" value="submit">
+		<input class="button" type="reset">
+	</fieldset>
+</form>
+<!--</main>-->
+
+<footer>
+		<p>Copyright &copy; 2011 Pacific Trails Resort<br>
+	<span>webmaster name</span></p>
+</footer>
+
+</div>
+</body>
+
+
+
+
+
+
